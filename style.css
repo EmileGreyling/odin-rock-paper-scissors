@@ -1,0 +1,50 @@
+body {
+    background-color: #1A2130;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+#heading {
+    color:whitesmoke;
+    font-size: 32px;
+    text-align: center;
+}
+
+#result {
+    display: none;
+}
+
+#game {
+    display: flex;
+    justify-content: space-evenly;
+    color: whitesmoke;
+}
+
+#game h1 {
+    font-size: xx-large;
+}
+
+#human, #computer {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#choices {
+    display: flex;
+}
+
+.choice {
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    font-size: 180px;
+    margin: 0 10px;
+    height: 250px;
+    width: 250px;
+}
+
+#human .choice:hover {
+    cursor: pointer;
+    background-color: #4e5669;
+    transition: all .3s;
+}
