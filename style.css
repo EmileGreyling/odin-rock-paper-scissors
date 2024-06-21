@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #1A2130;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -7,10 +12,25 @@ body {
     color:whitesmoke;
     font-size: 32px;
     text-align: center;
+    margin-top: 10px;
+}
+
+#leaderboard {
+    color:whitesmoke;
+    font-size: 28px;
+    margin-left: 48px;
+    margin-bottom: 10px;
+}
+
+
+#scores {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #result {
     margin-bottom: 10px;
+    text-align: center;
     font-style: italic;
 }
 
@@ -27,7 +47,7 @@ body {
 #human, #computer {
     border: 2px solid whitesmoke;
     border-radius: 10px;
-    padding: 20px;
+    padding: 32px;
     text-align: center;
 }
 
