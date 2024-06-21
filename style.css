@@ -10,7 +10,8 @@ body {
 }
 
 #result {
-    display: none;
+    margin-bottom: 10px;
+    font-style: italic;
 }
 
 #game {
