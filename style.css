@@ -29,9 +29,22 @@ body {
 }
 
 #result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-bottom: 10px;
     text-align: center;
     font-style: italic;
+}
+
+#result button {
+    padding: 10px 20px;
+    background-color: #ffc83d;
+    border: 1px solid #1A2130;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
 }
 
 #game {

@@ -4,10 +4,12 @@ let humanScore = 0;
 let computerScore = 0;
 
 let computerChoiceElement = document.querySelector("#computerChoice");
-let resultElement = document.querySelector("#result");
+let resultElement = document.querySelector("#result span");
 let humanScoreElement = document.querySelector("#humanScore");
 let computerScoreElement = document.querySelector("#computerScore");
+let playAgainButton = document.querySelector("#playAgain");
 
+playAgainButton.onclick = () => window.location.reload();
 
 function getComputerChoice() {
     const computerChoiceIndex = Math.floor(Math.random() * CHOICES.length);
@@ -63,6 +65,7 @@ function playRound(humanChoice) {
         if (humanScore === 5) {
             resultElement.innerHTML = 'GAME OVER. You won!';
             gameStillActive = false;
+            playAgainButton.style.display = 'block';
             return;
         }
 
@@ -85,6 +88,7 @@ function playRound(humanChoice) {
         if (computerScore === 5) {
             resultElement.innerHTML = 'GAME OVER. You lost!';
             gameStillActive = false;
+            playAgainButton.style.display = 'block';
             return;
         }
 
